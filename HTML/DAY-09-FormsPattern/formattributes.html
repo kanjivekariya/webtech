@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form attributes</title>
+</head>
+<body>
+    <h1>Step  , readonly , minlength , maxlength , pattern  attributes</h1>
+    <form action="">
+        <label for="">Price:</label>
+        <input type="range" name="" id="" min="0" max="100" step="20">
+        <br><br>
+        <label for="">username:</label>
+        <input type="text" name="" id="" minlength="3" maxlength="8">
+        <br><br>
+        <label for="">Password:</label>
+        <input type="text" name="" id="" pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9]).{8}"  title="password must includes Uppercase , lowercase and numbers" required>
+        <button>Submit</button>
+    </form>
+</body>
+</html>

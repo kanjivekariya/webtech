@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psuedo Element</title>
+  <style>
+   li{
+    color:orangered;
+   }
+   li::marker{
+    color: blue;
+   }
+   input{
+    outline: none;
+    caret-color: red;
+   }
+   input::placeholder{
+    font-size: 10px;
+    color: rebeccapurple;
+   }
+  </style>
+</head>
+<body>
+    <h1>Pseudo Element ::marker and ::placeholder</h1>
+    <ul>
+        <li>list-1</li>
+        <li>list-2</li>
+        <li>list-3</li>
+    </ul>
+    Enter username <input type="text" name="" id="" placeholder="Enter your name ">
+</body>
+</html>

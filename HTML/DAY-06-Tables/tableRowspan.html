@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rowspan in table</title>
+</head>
+<body>
+    <h1>Rowspan in table</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>EMP.id</th>
+                <th>EMP.Name</th>
+                <th>Salary</th>
+            </tr>
+             </thead>
+
+           <tbody>
+            <tr>
+                <td>101</td>
+                <td>Smith</td>
+                <td rowspan="2">25000</td>
+            </tr>
+            <tr>
+               <td>102</td>
+               <td>Jones</td>
+               <!-- <td>30000</td> -->
+            </tr>
+            
+           </tbody>
+       <tfoot>
+        <tr>
+            <td colspan="2">Total Employees</td>
+            <td>2</td>
+        </tr>
+       </tfoot>
+    </table>
+</body>
+</html>

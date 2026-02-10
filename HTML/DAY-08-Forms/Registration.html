@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend><h1>Register Form</h1></legend>
+        
+        <table>
+            <tr>
+                <td><label for="">FirstName : </label></td>
+                <td><input type="text" placeholder="Enter your firstname" name="firstname"></td>
+            </tr>
+            <tr>
+                <td><label for="">LastName :</label></td>
+                <td><input type="text" placeholder="Enter your firstname" name="lastname"></td>
+            </tr>
+            <tr>
+                <td><label for="">DOB</label></td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <tr>
+                <td><label for="">Gender</label></td>
+                <td>
+                    <input type="radio" name="gender" value="male">Male
+                    <input type="radio" name="gender" value="female">Female
+                    <input type="radio" name="gender" value="other">other
+                
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Skills</label></td>
+                <td><label for="html"><input type="checkbox" name="skill" id="html" value="html">HTML</label>
+                   <label for="css"><input type="checkbox" name="skill" id="css" value="css">CSS</label> 
+                    <label for="js"><input type="checkbox" name="skill" id="js" value="js">JS</label>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Select Course</label></td>
+                <td>
+                    <select name="" id="" name="course">
+                        <option value="Select any Course" disabled selected>Select any Course</option>
+                            <option value="Java Fullstack">java Fullstack</option>
+                            <option value="Python Fullstack">Python Fullstack</option>
+                            <option value="Data Analyst">Data Analyst</option>
+                            <option value="MERN Stack">MERN Stack</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Course Price</label></td>
+                <td><input type="range" min="15000" max="35000" step="1000" name="cprice"></td>
+            </tr>
+            <tr>
+                <td><label for="">Select PL for course</label></td>
+                <td><input type="text" list="pl" name="pl">
+                    <datalist id="pl" name="pl">
+                            <option value="Hinglish">Hinglish</option>
+                            <option value="Hindi">Hindi</option>
+                            <option value="English">English</option>
+                            <option value="Gujarati">Gujarati</option>
+                    </datalist>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="">Address</label></td>
+                <td><textarea name="address" id="" cols="30" rows="5"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="">Upload Resume: </label></td>
+                <td><input type="file" accept=".pdf" name="f1"></td>
+            </tr>
+            <tr>
+                <td>Term & Conditions</td>
+                <td>
+                    <input type="checkbox" name="term" value="accept">I accept T & C
+                </td>
+            </tr>
+            <tr>
+                <td><input type="reset" value="reset"></td>
+                <td><input type="submit" value="submit"></td>
+            </tr>
+            </fieldset>
+        </table>
+    </form>
+</body>
+</html>
