@@ -1,15 +1,220 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zerotime Solutions</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Login</title>
+
+<!-- Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(135deg, #3b82f6, #a855f7, #f472b6);
+  background-size: 200% 200%;
+  animation: gradientMove 10s ease infinite;
+}
+
+/* Soft blur overlay */
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(80px);
+  z-index: 0;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+  color: #222;
+  position: relative;
+  z-index: 1;
+}
+
+.header .logo {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.header .links a {
+  text-decoration: none;
+  margin-left: 20px;
+  color: #333;
+  font-size: 14px;
+}
+
+/* Center card */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.card {
+  width: 380px;
+  padding: 40px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.card h2 {
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-group input:focus {
+  border-color: #7c3aed;
+}
+
+/* Login button */
+.login-btn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background: #2e003e;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+.login-btn:hover {
+  background: #4c1d95;
+}
+
+.forgot {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+}
+
+.divider {
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 12px;
+  color: #777;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #ddd;
+}
+
+.divider::before { margin-right: 10px; }
+.divider::after { margin-left: 10px; }
+
+/* Google button */
+.google-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: #fff;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.google-btn:hover {
+  background: #f3f3f3;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.footer a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #4c1d95;
+}
+</style>
 </head>
 <body>
-  <header>
-    <nav>
-      
-    </nav>
-  </header>
+
+<header class="header">
+  <div class="logo">Whimsical</div>
+  <div class="links">
+    <a href="#">Contact support</a>
+    <a href="#">Sign up</a>
+  </div>
+</header>
+
+<div class="container">
+  <div class="card">
+    <h2>Welcome back!</h2>
+
+    <div class="input-group">
+      <input type="email" placeholder="Email">
+    </div>
+
+    <div class="input-group">
+      <input type="password" placeholder="Password">
+    </div>
+
+    <button class="login-btn">Log in</button>
+    <a href="#" class="forgot">Forgot password?</a>
+
+    <div class="divider">OR</div>
+
+    <button class="google-btn">Log in with Google</button>
+  </div>
+</div>
+
+<div class="footer">
+  Don't have an account? <a href="#">Sign up</a>
+</div>
+
 </body>
 </html>

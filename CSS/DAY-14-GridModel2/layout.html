@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>grid</title>
+    <title>Layout2</title>
     <style>
       * {
         margin: 0;
@@ -29,32 +29,27 @@
       }
       .header {
         grid-column: 1/4;
-        background-color: rgb(211, 244, 211);
       }
-      .aside {
+      .aside1 {
+        grid-column: 1;
         grid-row: 2/4;
-        background-color: rgb(219, 219, 242);
       }
-      .section {
-        background-color: rgb(243, 215, 173);
-        grid-column: 2/4;
+      .aside2 {
+        grid-column: 3;
+        grid-row: 2/4;
       }
       .footer {
         grid-column: 1/4;
-        background-color: rgb(197, 197, 222);
-      }
-      .main {
-        background-color: rgb(239, 195, 239);
-        grid-column: 2/4;
       }
     </style>
   </head>
   <body>
     <div class="layout">
       <div class="box header">Header</div>
-      <div class="box aside">Aside</div>
+      <div class="box aside1">Aside-1</div>
       <div class="box section">Section</div>
       <div class="box main">Main</div>
+      <div class="box aside2">Aside-2</div>
       <div class="box footer">Footer</div>
     </div>
   </body>
