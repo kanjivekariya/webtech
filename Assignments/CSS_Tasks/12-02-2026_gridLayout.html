@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    .layout{
+        height: 100vh;
+        width: 100vw;
+        display: grid;
+        grid-template-columns: repeat(4,auto);
+        grid-template-rows: repeat(5,auto);
+    }
+    .box{
+        padding: 20px;
+        /* border: 2px solid; */
+         background-repeat: no-repeat;
+         background-size: cover;
+    }
+    .box > h2{
+        color: white;
+        background-color: black;
+        opacity: 0.5;
+    }
+    #box2 > h1{
+        color: white;
+        background-color: black;
+        opacity: 0.5;
+        font-size: 80px;
+        font-weight: 600;
+    }
+    #box1{
+         background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1Lac4woB8_LIs9GVthsfvOrc96mIzsUi0-w&s);
+        
+    }
+    #box2{
+       grid-column: 2/4;
+        grid-row:1/5 ;
+        background-image: url(https://images.pexels.com/photos/1954524/pexels-photo-1954524.jpeg?cs=srgb&dl=pexels-willpicturethis-1954524.jpg&fm=jpg);
+       
+    }
+    #box3{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSh4_YJj0WHX1lBkMo9uY5jytsD6VjEFXy41Q&s);
+        
+    }
+    #box4{
+        grid-row: 2/6;
+        background-image: url(https://images.pexels.com/photos/11175793/pexels-photo-11175793.jpeg);
+    }
+    #box5{
+        background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9B6wZLyreb9lhJ5PDJBJcCcnfcUNhnWSX_g&s);
+    }
+    #box6{
+        background-image: url(https://i.pinimg.com/736x/29/19/db/2919dba6073b5ed5a9036bd08859000b.jpg);
+    }
+    #box7{
+        grid-row: 2/6;
+        background-color: black;
+    }
+    form {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+
+    }
+    form h2{
+        padding: 10px;
+        background-color: rgb(236, 231, 231);
+        color: black;
+        border-radius: 5px;
+        text-align: center;
+    }
+    input,textarea{
+       flex-grow: 0.5; 
+       margin-top: 20px;
+       padding: 10px;
+       border-radius: 5px;
+    }
+    button{
+        margin: 10px auto;
+        background-color: red;
+        color: white;
+        border-radius: 5px;
+        padding: 10px 30px;
+        border: 1px solid transparent;
+        outline: none;
+    }
+   </style>
+</head>
+<body>
+    <div class="layout">
+        <div class="box" id="box1"><h2>Weight Training</h2></div>
+        <div class="box" id="box2"><h1>Fitness</h1></div>
+        <div class="box" id="box3"><h2>Training Programs</h2></div>
+        <div class="box" id="box4"><h2>Agility Training</h2></div>
+        <div class="box" id="box5"><h2>goal Setting</h2></div>
+        <div class="box" id="box6"><h2>Get Started</h2></div>
+        <div class="box" id="box7">
+            <form action="">
+                <h2>Register here</h2>
+                <input type="text" name="" id="" placeholder="Name">
+                <input type="email" placeholder="Email Address">
+                <textarea name="" id="" placeholder="Message"></textarea>
+                <button>Send Now</button>
+            </form>
+            
+        </div>
+    </div>
+</body>
+</html>

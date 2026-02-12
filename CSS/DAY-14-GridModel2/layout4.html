@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid Layout</title>
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Monda:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Open Sans", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .parent {
+        height: 70vh;
+        width: 65vw;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+        /* margin: 20px; */
+      }
+      .box {
+        padding: 24px;
+        border-radius: 7px;
+        background-color: rgb(217, 231, 235);
+        font-size: 16px;
+        color: #0069b4;
+        box-shadow: rgba(172, 172, 194, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      }
+      .box1 {
+        grid-column: 1/4;
+      }
+      .box2 {
+        grid-column: 4/9;
+        word-break: break-word;
+      }
+      .box2 p {
+        margin: 5px 10px;
+      }
+      .box3 {
+        grid-column: 1/3;
+        grid-row: 2/4;
+        background-image: url(../../assets/gridmodelPhoto.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        color: white;
+      }
+      .box4 {
+        grid-column: 3/5;
+      }
+      .box5 {
+        grid-column: 5/9;
+      }
+      .box6 {
+        grid-column: 3/7;
+      }
+      .box7 {
+        grid-column: 7/9;
+      }
+      .box2,
+      .box4,
+      .box5,
+      .box7 {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: start;
+      }
+      h1,
+      h3 {
+        color: #003e6b;
+        font-size: 30px;
+      }
+      span{
+        font-size: 18px;
+        font-weight: 600;
+        color: #003e6b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="box box1">
+        <h1>
+          Why<br />
+          DayDreamSoft?
+        </h1>
+      </div>
+      <div class="box box2">
+        <p>
+          With over a decade of experience, we combine industry knowledge with
+          innovative solutions to stay ahead of the curve
+        </p>
+        <span>10+ Years in the Industry.</span>
+       
+      </div>
+      <div class="box box3">
+        <p><b>Our core values drive our actions and your success.</b></p>
+      </div>
+      <div class="box box4">
+        <p>
+          Skilled experts collaborate seamlessly, combining their expertise and
+          innovation to deliver the best results for you.
+        </p>
+        <h3>75+</h3>
+      </div>
+      <div class="box box5">
+        <p>
+          Successfully completed over 590 projects, showcasing our expertise,
+          reliability, and commitment to delivering high-quality solutions with
+          precision, innovation, and a results-driven approach.
+        </p>
+        <h3>590+</h3>
+      </div>
+      <div class="box box6">
+        <p>
+          We proudly deliver 98.5% of our projects on time, ensuring
+          reliability, efficiency, and a strong commitment to meeting deadlines.
+          With our well-structured processes, expert team, and proactive
+          approach, you can trust us to keep your projects on track, exceed
+          expectations, and deliver exceptional results without delays.
+        </p>
+      </div>
+      <div class="box box7">
+        <p>
+          Over 340 clients are thrilled with our work, trusting us to
+          consistently deliver high-quality solutions and great results they can
+          rely on.
+        </p>
+        <h3>340+</h3>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid model</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      
+      .parent {
+        height: 85vh;
+        width: 100vw;
+        
+        display: grid;
+        /* grid-template-columns: repeat(6,1fr);
+            grid-template-rows: repeat(3,1fr); */
+        grid-template-areas:
+          "jungle jungle jungle mountains mountains mountains"
+  "desert desert beach  mountains mountains mountains"
+  "icebergs rain  beach  mountains mountains mountains";
+      }
+      .box {
+        padding: 20px;
+        border: 1px solid black;
+        text-align: center;
+      }
+      #box1 {
+        grid-area: jungle;
+        background-image: url(https://t4.ftcdn.net/jpg/07/30/41/97/360_F_730419788_1LQwRRWZTvudRZSOx8wEriYQWs5dOf3q.jpg);
+      }
+      #box2 {
+        /* grid-column: 4/7;
+            grid-row: 1/4; */
+        grid-area: mountains;
+        background-image: url(https://vintagestockphotos.com/sample/65551/mountain-valley.jpg);
+      }
+      #box3 {
+        /* grid-column: 2;
+           
+            grid-column: 1/4; */
+        grid-area: desert;
+        background-image: url(https://www.beautifulworld.com/wp-content/uploads/2018/07/sahara-desert.jpg);
+      }
+      #box4 {
+        /* grid-row: 2/4; */
+        grid-area: beach;
+        background-image: url(https://i.pinimg.com/1200x/3e/13/33/3e13334c746867842ad72301e82ddb82.jpg);
+      }
+      #box5{
+        grid-area: icebergs;
+        background-image: url(https://cdn.britannica.com/07/152307-050-6FD0D3EE/Iceberg-waters-Antarctica.jpg);
+      }
+      #box6{
+        grid-area: rain;
+        background-image: url(https://media.istockphoto.com/id/1257951336/photo/transparent-umbrella-under-rain-against-water-drops-splash-background-rainy-weather-concept.jpg?s=612x612&w=0&k=20&c=lNvbIw1wReb-owe7_rMgW8lZz1zElqs5BOY1AZhyRXs=);
+      }
+      #box1,#box2,#box3,#box4,#box5,#box6{
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      .box h2{
+        color: white;
+        padding: 10px;
+        background-color: black;
+        opacity: 0.4;
+      }
+      .section h1{
+        margin: 20px auto;
+        width: 80%;
+        padding: 10px 0px;
+        color: white;
+        background-color: black;
+        text-align: center;
+        border: 2px solid white;
+        box-shadow: 2px 2px 2px lightgray;
+        border-radius: 7px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="section"><h1>Nature's gallery</h1></div>
+    <div class="parent">
+      <div class="box" id="box1"><h2>Jungles</h2></div>
+      <div class="box" id="box2"><h2>Mountains</h2></div>
+      <div class="box" id="box3"><h2>Desert</h2></div>
+      <div class="box" id="box4"><h2>Beach</h2></div>
+      <div class="box" id="box5"><h2>Icebergs</h2></div>
+      <div class="box" id="box6"><h2>Rain</h2></div>
+    </div>
+  </body>
+</html>
