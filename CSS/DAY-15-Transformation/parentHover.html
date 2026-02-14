@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NotionMind</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: ClearSansDisplay, Calibri, sans-serif;
+      }
+      .container {
+        height: 700px;
+        width: 100%;
+        /* margin: 15px; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .box {
+        height: 500px;
+        width: 25%;
+        transition: all 2s linear;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        overflow: hidden;
+        border-radius: 20px;
+        padding: 30px;
+      }
+      .box:nth-child(1) {
+        border-bottom: 5px solid rgb(226, 84, 221);
+        background-color: rgb(255 238 248);
+      }
+      .box:nth-child(2) {
+        border-bottom: 5px solid rgb(140, 94, 222);
+        background-color: rgb(230 220 253);
+      }
+      .box:nth-child(3) {
+        border-bottom: 5px solid pink;
+        background-color: rgb(255 235 218);
+      }
+      .child {
+        width: 100%;
+        height: 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 15px;
+        transition: all 0.5s linear;
+        overflow: hidden;
+        
+    
+      }
+      .box:nth-child(1) .child {
+        /* background-color: black; */
+        background-image: url(https://notionmind.com/_next/static/media/Conrex.53da3d7f.webp);
+        /* transition: all 1s linear; */
+      }
+      .box:nth-child(2) .child {
+        background-image: url(https://notionmind.com/_next/static/media/abad.862315ac.webp);
+      }
+      .box:nth-child(3) .child {
+        background-image: url(https://notionmind.com/_next/static/media/Alcon.f81de2a4.webp);
+      }
+      .box:hover .child {
+        /* transform: scale(1.1); */
+        background-size: 120%;
+      }
+      .box > div h2,p{
+        /* text-align: start; */
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+        <div>
+          <h2>Real Estate</h2>
+          <p>Enterprise,Process,Automation</p>
+        </div>
+
+        <div class="child"></div>
+      </div>
+      <div class="box">
+        <div>
+          <h2>Facility management</h2>
+          <p>Enterprise Solutions</p>
+        </div>
+        <div class="child"></div>
+      </div>
+      <div class="box">
+        <div>
+          <h2>HealthCare</h2>
+          <p>Enterprise, Digital Transformation</p>
+        </div>
+        <div class="child"></div>
+      </div>
+    </div>
+  </body>
+</html>
