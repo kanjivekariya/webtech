@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookCover</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .book{
+            width: 100%;
+            height: 100vh;
+            background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            perspective: 1000px;
+        }
+        .front-page{
+            width: 35%;
+            height: 70%;
+            background-image: url(https://edit.org/images/cat/book-covers-big-2019101610.jpg);
+            /* background-color: red; */
+            position: absolute;
+            transition: all 0.7s  linear;
+            transform-origin: 0% 0%;
+            margin-left: 100px;
+             background-repeat: no-repeat;
+            /* background-position: center; */
+            background-size: contain;
+        }
+        .back-page{
+            width: 35%;
+            height: 70%;
+            margin-left: 100px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfgghdkkwt6FjbekeY1_AAnoyuhYh7U8rxLQ&s);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+        .front-page:hover{
+            transform: rotateY(-180deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="book">
+        <div class="front-page"></div>
+        <div class="back-page"></div>
+    </div>
+</body>
+</html>
