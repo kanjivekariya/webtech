@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Qspiders</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .parent {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        /* transform: translateX(-100px); */
+      }
+      .section {
+        height: 100%;
+        width: 65%;
+        /* transform: skew(-25deg); */
+       border: 2px solid;
+        overflow: hidden;
+      }
+      .img-section {
+        height: 100%;
+        width: 35%;
+        transform: skew(-25deg);
+        border: 2px solid;
+        
+        background-image: url(https://img.freepik.com/free-photo/business-man-owner-company-office_1303-16046.jpg?semt=ais_user_personalization&w=740&q=80);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow: hidden;
+      }
+      nav {
+        height: 60px;
+        width: 100%;
+        border-bottom: 2px solid #ddd;
+      }
+      ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      
+      .read-more > p{
+        padding: 10px;
+        border-radius: 10px;
+        border: 1px solid #ddd;
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="section">
+        <nav>
+          <ul>
+            <li>
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuoK2CrX4qYIRXnJLS56wRfNdza36R2LtLWQ&s"
+                alt="" />
+            </li>
+            <li>Product</li>
+            <li>Features</li>
+            <li>MarketPlace</li>
+            <li>Company</li>
+            <li>Log in</li>
+          </ul>
+        </nav>
+        
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi exercitationem recusandae .</p>
+            <div>
+                <h2>Data inrich to your business</h2>
+            </div>
+        
+      </div>
+      <div class="img-section"><img src="" alt=""></div>
+    </div>
+  </body>
+</html>

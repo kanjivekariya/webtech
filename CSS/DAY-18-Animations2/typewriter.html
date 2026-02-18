@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TypeWriter</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height: 80vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .typeWriter{
+            font-size: 70px;
+            font-family: monospace;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 5px solid;
+            animation: typing 4s steps(24), blink 1s step-end infinite;
+        }
+        @keyframes typing {
+            from{
+                width: 0ch;
+            }
+            to{
+                width: 24ch;
+            }
+        }
+        @keyframes blink {
+            0%{
+               border-right: 5px solid black;
+            }
+            50%{
+                border-right:5px solid transparent;
+            }
+            100%{
+                border-right: 5px solid black;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1 class="typeWriter">Hello, I am learning CSS</h1>
+</body>
+</html>

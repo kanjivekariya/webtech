@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Autoscrolling</title>
+    <style>
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .scroller{
+            width: 100%;
+            padding: 20px 0px;
+            background-color: #f4f4f4;
+            overflow: hidden;
+        }
+        .scroller-track{
+            width: max-content;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            animation: box-scroller 10s linear infinite;
+        }
+        .box{
+            width: 200px;
+            height: 100px;
+            margin: 0px 40px;
+            border-radius: 10px;
+            background-repeat:no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+        }
+        #box1{
+            background-image: url(https://img.freepik.com/premium-vector/google-logo_1273375-1572.jpg?semt=ais_wordcount_boost&w=740&q=80);
+        }
+        #box2{
+            background-image: url(https://download.logo.wine/logo/Uber/Uber-Logo.wine.png);
+        }
+        #box3{
+            background-image: url(https://cdn.dribbble.com/userupload/22025714/file/original-2ced14db767d6e643d72603d798b9b39.png?resize=752x&vertical=center);
+        }
+        #box4{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXuDvlNDmDGF5QwPETEs3eh7RHNGmKBpgwyw&s);
+        }
+        #box5{
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHx2fvDlifHG_PwXe6uRtI3zlsg6vX2VqcDA&s);
+        }
+        .scroller-track:hover{
+            animation-play-state:paused;
+            
+        @keyframes box-scroller {
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
+    </style>
+  </head>
+  <body>
+    <div class="scroller">
+      <div class="scroller-track">
+        <!-- 1st set -->
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+        <!-- 2nd set -->
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+        <div class="box" id="box5"></div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        font-family:
+          "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: rgb(0, 0, 0);
+      }
+      .parent {
+        height: 80vh;
+        width: 95vw;
+        /* border: 1px solid; */
+        display: flex;
+        gap: 20px;
+      }
+      .card {
+        width: 25%;
+        height: 100%;
+        /* border: 3px solid #ddd; */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        border-radius: 20px;
+        transition: all 0.1s linear;
+        overflow: hidden;
+      }
+      .card img {
+        height: 100%;
+        width: 100%;
+        border-radius: 20px;
+        transition: all 0.2s linear;
+      }
+
+      h2 {
+        position: absolute;
+        color: white;
+        margin: 25px 0px 0px 15px;
+      }
+      .card:hover img {
+        transform: translateY(200px);
+        
+      }
+      .card:hover p {
+        display: block;
+      }
+      p {
+        color: white;
+        /* position: relative; */
+        font-size: 20px;
+        margin: 0px 20px;
+        display: none;
+        transform: translateY(75px);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="card" id="card1">
+        <h2>Learning & Development</h2>
+        <p>Product launch and how-to videos to get people to buy your stuff.</p>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Ffcea5005d671451e9b07839c893228d0%2F120d1e8147d7419199b04dbed7888a2b"
+          alt="" />
+      </div>
+      <div class="card" id="card2">
+        <h2>Sales Enablement</h2><p>
+          Internal training videos that your team will actually pay attention
+          to.
+        </p>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Ffcea5005d671451e9b07839c893228d0%2F366555915c984b1eb87c6597c416a6f5"
+          alt="" />
+        
+      </div>
+      <div class="card" id="card3">
+        <h2>support</h2><p>
+          Sales training videos that help your team turn cold leads into warm
+          bags of money.
+        </p>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Ffcea5005d671451e9b07839c893228d0%2Fb537d3eea233499988fe39fb7db07bd8"
+          alt="" />
+        
+      </div>
+      <div class="card" id="card4">
+        <h2>Creators</h2><p>
+          Help videos that engage your customers before they get mad enough to
+          cancel.
+        </p>
+        <img
+          src="https://cdn.builder.io/api/v1/image/assets%2Ffcea5005d671451e9b07839c893228d0%2F97b43f3cd1904644b27e66b5d96f1b3d"
+          alt="" />
+        
+      </div>
+    </div>
+  </body>
+</html>
