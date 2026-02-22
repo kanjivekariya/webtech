@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            border: 1px solid;
+            margin: 20px;
+        }
+        #box1{
+            /* overflow: visible; */
+            overflow: hidden;
+            /* overflow: auto; */
+        }
+        #box2{
+            white-space: nowrap;
+            overflow-x: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Overflow Visible</h1>
+    <div class="box" id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed enim modi cupiditate laborum, harum est doloribus repellat esse consectetur odio possimus natus impedit deleniti eius quae repellendus aperiam incidunt? Labore?
+    Tempora, exercitationem? Dolorem beatae fugiat vel sit est rem rerum eos quisquam, quos tempora repudiandae suscipit reprehenderit quaerat numquam at quibusdam inventore perferendis natus. Fuga quidem asperiores temporibus quo cupiditate!
+    Itaque tempora tempore similique facilis facere totam deserunt vel pariatur dignissimos, voluptatum ratione ipsam reiciendis quaerat ad nobis harum. Ab ipsa temporibus at itaque, incidunt illo totam minima. Ipsam, ea.</div>
+    <div class="box" id="box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint soluta totam accusamus sequi voluptatum, adipisci molestiae explicabo delectus aliquam minus, cumque, eum minima ullam temporibus suscipit possimus veniam voluptate fugiat.</div>
+    <div class="box" id="box"></div>
+</body>
+</html>

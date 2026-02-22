@@ -1,20 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Monda:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Monda:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 *{
-    padding: 0;
+    padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
+body{
+    height: 100vh;
+}
+.upper-section{
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     background-color: #F7F4ED;
+     border-bottom: 1px solid ;
+}
 header{
     height: 72px;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    /* border: 1px solid; */
-    background-color: #F7F4ED;
-    padding: 0px 65px;
-    border-bottom: 1px solid ;
+    
+    /* border: 2px solid red; */
+    
+    
 }
 header>aside{
     height: 72px;
@@ -33,6 +44,8 @@ header > nav{
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border: 2px solid blue; */
 }
 header>nav>ul{
     list-style: none;
@@ -42,17 +55,14 @@ header>nav>ul{
     gap: 20px;
     /* border: 1px solid; */
 }
-header>aside>ul>li{  
-  font-family: "Open Sans", sans-serif;
-
-}
 button{
-    padding: 8px 14px;
+    padding: 9px 16px;
     background-color: black;
     color: white;
     border-radius: 20px;
     /* font-size: 12px; */
-    font-weight: 500;
+    font-weight: 600;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 main{
     height: 80vh;
@@ -63,23 +73,31 @@ main{
     justify-content: center;
     align-items: center;
     position: relative;
+    border-bottom: 1px solid;
    
 }
 main>article{
-    height: 80vh;
-    width: 70%;
+    height: 50vh;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
-    gap: 15px;
-    padding-left: 95px;
+    gap: 35px;
+    /* padding-left: 95px; */
+    /* border: 2px solid red; */
     
 }
 main>article>h1{
     font-size: 120px;
     font-weight: 500;
+    letter-spacing:-5px;
+    line-height: 95px;
     
+}
+main p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
 }
 main>aside{
     height: 80vh;
@@ -91,10 +109,23 @@ main>aside{
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin-top: 20px;
+    position: absolute;
+    bottom: 0;
+    top: 10px;
+    right: 0;
+    
+}
+main button{
+    padding: 10px 40px;
+    border-radius: 30px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    border:none;
+    
 }
 footer{
-    height: 10vh;
+    height: 72px;
     background-color: #F7F4ED;
     display: flex;
     justify-content: center;
@@ -102,11 +133,71 @@ footer{
 }
 footer>ul{
     /* width: 50%; */
-    height: 10vh;
+    /* height: 10vh; */
     display: flex;
     justify-content:space-evenly;
     align-items: center;
     list-style: none;
     gap: 20px;
     font-size: 13px;
+}
+@media screen and (min-width:320px) and (max-width:700px){
+    header li{
+        display: none;
+    }
+    header{
+        justify-content: space-between;
+        gap: 80px;
+    }
+    
+    header aside{
+        width: 50%;
+    }
+    header nav{
+        width: 50%;
+    }
+    header button{
+        padding: 8px 18px;
+        font-size: 16px;
+        border-radius: 30px;
+        font-weight: 500;
+    }
+    header>aside>img{
+        height: 25px;
+    }
+   main{
+    height: 80vh;
+   }
+    main>aside{
+        display: none;
+    }
+    main>article{
+        margin:0px;
+        gap: 25px;
+        
+    }
+    main>article>h1{
+        font-size: 85px;
+        letter-spacing:-1px;
+    line-height: 75px;
+    }
+    main>article>p{
+        font-size: 22px;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    main>article>button{
+         padding: 12px 40px;
+        font-size: 20px;
+        border-radius: 30px;
+        background-color: green;
+        border: 0px;
+    }
+    main button{
+        justify-self: flex-end;
+    }
+    footer{
+        background-color: black;
+        color: white;
+        height: calc(100vh-80vh-72px);
+    }
 }
