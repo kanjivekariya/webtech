@@ -989,22 +989,30 @@ footer {
       align-items: center;
       flex-direction: column;
   }
-
+.section-head {
+    height: 30%;
+    width: 80%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    /* flex-direction: row; */
+}
   .section-head h1{
-    font-size: 35px;
+    font-size: 30px;
     text-align: center;
   }
   #program-section{
     height: 650px;
     width: 100%;
+    /* overflow: hidden; */
   }
  #program-section .card-section{
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,100%);
-    width: 90%;
+    grid-template-rows: repeat(6,90%);
+    width: 85%;
+    /* background-color: var(--dark); */
+    /* height: 85; */
  }
-  #program-section .card-section .card .box{
-  }
   #about-section{
     height: 85vh;
   }
