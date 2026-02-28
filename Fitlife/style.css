@@ -434,7 +434,8 @@ header .join-btn{
     /* margin-top: 5px; */
     border-bottom: 1px solid #343333;
     color: #aaa;;
-    height: 35px;
+    /* height: 35px; */
+    padding: 8px 0px;
     font-size: 15px;
     /* border: 1px solid white; */
     display: flex;
@@ -567,6 +568,7 @@ header .join-btn{
     height: 90%;
     width: 30%;
     padding: 20px;
+    text-align: center;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -579,6 +581,7 @@ header .join-btn{
 .price-section h4{
     text-align: center;
     color: white;
+    
 }
 .price-card p{
     color: var(--gray);
@@ -587,6 +590,7 @@ header .join-btn{
     font-size: 40px;
     font-weight: 700;
     color: var(--green);
+    /* border: 1px solid white; */
 }
 .price-card .price{
     height: 10%;
@@ -594,10 +598,12 @@ header .join-btn{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    /* border: 1px solid white; */
 }
 .price-card .card ul{
     list-style-type: none;
     position: relative;
+    /* border: 1px solid white; */
     /* width: 100%; */
 }
 .price-card .card ul li::before{
@@ -854,9 +860,6 @@ footer {
     font-size: 14px;
     color: #333;
 }
-/* ===============================
-   TABLET (992px and below)
-=================================*/
 @media (max-width: 992px){
 
   header{
@@ -989,49 +992,199 @@ footer {
       align-items: center;
       flex-direction: column;
   }
-.section-head {
-    height: 30%;
-    width: 80%;
-    display: flex;
-    justify-items: center;
-    align-items: center;
-    /* flex-direction: row; */
+    #program-section{
+        height: auto;
+        padding: 40px 0;
+    }
+
+    .section-head{
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .section-head h1{
+        font-size: 30px;
+    }
+
+    .section-head p{
+        font-size: 14px;
+    }
+
+    .card-section{
+        width: 80%;
+        height: auto;
+        grid-template-columns: 1fr;  
+        grid-template-rows: auto;
+        gap: 20px;
+    }
+
+    .card-section .card{
+        width: 100%;
+    }
+
+    .card-section .card > .box{
+        height: 200px;  
+    }
+
+    .card-content{
+        padding: 15px;
+        gap: 8px;
+    }
+
+    .card-content h4{
+        font-size: 16px;
+    }
+
+    .card-content p{
+        font-size: 13px;
+    }
+
+    .join-button{
+        margin-top: 15px;
+    }
+
+    .card-content .join-button button{
+        padding: 6px 12px;
+        font-size: 13px;
+    }
+
+  #about-section{
+    height: auto;
+  }
+  .about-inside{
+    padding: 20px 10px;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .about-inside > .about-img{
+    width: 100%;
+    /* border: 1px solid white; */
+    justify-content: center;
+  }
+.about-inside > .about-details{
+    height: auto;
+    padding: 20px;
+    gap: 10px;
+    text-align: left;
 }
-  .section-head h1{
+.expert-section{
+    height: auto;
+}
+.expert-section > .expert-head{
+   padding: 50px 20px;
+}
+
+.expert-card .card{
+    justify-content: center;
+    align-items: center;
+    gap: 0.6rem;
+}
+.expert-card .card  h4{
+    font-size: 0.9rem;
+}
+.expert-card .card p{
+    text-align: center;
+}
+.price-section{
+    height: auto;
+}
+.price-section .price-card{
+    flex-direction: column;
+    width: 100%;
+    gap: 30px;
+    padding: 0px 20px 30px 20px;
+}
+.price-card .card{
+    height: auto;
+    width: 80%;
+    
+    gap: 10px;
+}
+.price-head{
+    width: 80%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  .price-head h1{
+    font-size: 35px;
+    text-align: center;
+  }
+  .price-section .price-card .card h1{
+    font-size: 50px;
+  }
+.price-card .card ul{
+    width: 80%;
+}
+.price-section .price-card .card a{
+    height: 50px;
+    margin-top: 20px;
+}
+.member-section{
+    height: auto;
+    width: 100%;
+}
+.member-section > .member-head{
+    padding: 30px 20px;
+}
+.member-section > .member-card{
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+    padding-bottom: 30px;
+}
+.member-section  .member-card .card{
+    width: 85%;
+    padding: 20px 20px;
+    gap: 20px;
+    
+}
+.journy-section {
+    height: auto;
+    gap: 20px;
+    padding: 60px 20px;
+}
+
+  .journy-section h1{
     font-size: 30px;
     text-align: center;
   }
-  #program-section{
-    height: 650px;
-    width: 100%;
-    /* overflow: hidden; */
-  }
- #program-section .card-section{
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6,90%);
-    width: 85%;
-    /* background-color: var(--dark); */
-    /* height: 85; */
- }
-  #about-section{
-    height: 85vh;
-  }
-  .about-inside{
-    flex-direction: column;
-  }
-  .price-head h1{
-    font-size: 24px;
-  }
-
-  .journy-section h1{
-    font-size: 24px;
+  .journy-section p{
     text-align: center;
   }
-
-  .journy-section button{
-    width: 100%;
+  footer{
+    border: 2px solid red;
+    /* overflow: hidden; */
   }
-
+.footer-container{
+    border: 1px solid rgb(10, 223, 49);
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 2fr 2fr 2fr;   
+}
+.footer-container .logo-section{
+    border: 1px solid rgb(244, 13, 175);
+    /* overflow:hidden; */
+   
+}
+.footer-container .logo-section p{
+     /* word-wrap: break-word;
+     overflow-wrap: break-word; */
+     word-break: break-all;     
+     /* white-space: normal; */
+     /* white-space: pre-line;   */
+}
+.footer-links{
+    border: 1px solid white;
+    width: 100%;
+}
+.footer-links ul{
+    width: 100%;
+    /* border: 2px solid red; */
+}
   .copy-right-section{
     font-size: 12px;
   }
