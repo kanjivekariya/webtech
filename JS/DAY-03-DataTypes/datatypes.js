@@ -53,7 +53,7 @@ console.log(`Hello, My name is ${username}`);
 //? 3.boolean
 let bool =true;
 console.log(bool);
-console.log(typeof bool);\
+console.log(typeof bool);
 
 //? 4 .null:
 //* Null means empty but not equals to zero
