@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Operator in js</h1>
+    <script>
+        // Ternary Operator:
+        let age = 20;
+        let result = age >= 20 ? "You can watch A rated Movies":"Go and watch pogo";
+        console.log(result);
+        
+        //Nullish Coleasing Operator (??)
+        //Result -> null or undefined -> Alternative option
+        let userAge = undefined;
+        console.log("user Age : ",userAge ?? 10);
+
+        function getName(user){
+            console.log(`Hello, welcome back ${user ?? "Guest"}`);
+            
+        }
+        getName();
+        getName("John");
+        
+    </script>
+</body>
+</html>

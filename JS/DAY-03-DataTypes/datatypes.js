@@ -57,7 +57,7 @@ console.log(typeof bool);
 
 //? 4 .null:
 //* Null means empty but not equals to zero
-let nullValue=null;
+let nullValue = null;
 console.log(nullValue);
 console.log(typeof null);
 
