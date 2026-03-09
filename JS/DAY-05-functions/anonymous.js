@@ -46,7 +46,7 @@ fun();
 
 //! 4. IIFE:
 //* IIFE stands for Immediate Invoking Function Expression.
-//* It will invokedjust after the function declaration.
+//* It will invoked just after the function declaration.
 //* It will be executed only once.
 
 console.log("Interputed the IIFE function");
