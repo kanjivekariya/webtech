@@ -14,7 +14,7 @@
 
 //! 1. Types of Primitive DAtatypes
 //? 1 .Number
-let num =10;
+let num = 10;
 console.log(num);
 
 //! type of operator:Unary operator
@@ -29,29 +29,29 @@ console.log(typeof num);
 //* We can create string in 3 ways
 
 //! 1. by using single Quotes:(' ')
-let str ='happy';
+let str = 'happy';
 console.log(str);
 console.log(typeof str); //string
 
 //! 2.By using Double Quotes:(" ")
-let str2="holi";
+let str2 = "holi";
 console.log(str2);
 
 //!3. By using String Template literal (Backticks) : (``)
 //* There are main two advantages of backticks:
 //? 1. Multiline String:
-let multiLineStr=`This is first line
+let multiLineStr = `This is first line
 This second line
 This is third line`
 console.log(multiLineStr);
 
 //? 2 .We can access a dynamic value from the variable
 //? Syntax: String Interpolation ->${}
-let username="john";
+let username = "john";
 console.log(`Hello, My name is ${username}`);
 
 //? 3.boolean
-let bool =true;
+let bool = true;
 console.log(bool);
 console.log(typeof bool);
 
@@ -67,22 +67,22 @@ let a;
 console.log(a);
 
 //? 6. bigint:
-let bignum=12345679563136796532235898989n;
+let bignum = 12345679563136796532235898989n;
 console.log(bignum);
 
 //? 7. Symbol():
 //* The symbol() Primitive datatype is used to create a unique values.
-let value1=Symbol("Happy");
-let value2=Symbol("Happy");
-let value3=value1;
+let value1 = Symbol("Happy");
+let value2 = Symbol("Happy");
+let value3 = value1;
 
-console.log(value1===value2); //false-> Here comparing the address
+console.log(value1 === value2); //false-> Here comparing the address
 console.log(value1.description);
 console.log(value2.description);
 
 console.log(value1.description === value2.description); //true -> Here Comparing the values
 
-console.log(value1===value3);
+console.log(value1 === value3);
 
 
 

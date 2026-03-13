@@ -4,9 +4,9 @@
 //* Arrow function was introduced in the ES6 concepts which was released in the year of 2015
 
 //? Syntax: () => {}
-let arrFun=()=>{
+let arrFun = () => {
     console.log("This is arrow function");
-    
+
 }
 console.log(arrFun);
 arrFun();
@@ -17,30 +17,30 @@ arrFun();
 let greet = () => console.log("Hello");
 greet();
 
-let add = (num1,num2) => num1+num2;
-console.log(add(10,20));
+let add = (num1, num2) => num1 + num2;
+console.log(add(10, 20));
 
 //! 2. Explicit Return in Arrow Function:
 //* Manually
-let mul = (num1,num2)=>{
+let mul = (num1, num2) => {
     console.log("Multiply Operation");
     return num1 * num2;
-    
+
 };
-console.log(mul(10,20));
+console.log(mul(10, 20));
 
 //! arguements keyword in arrow function:
-let arguFun = () =>{
+let arguFun = () => {
     // console.log(arguments); // Arguments is not defined
 };
-arguFun(10,20,30,40,50);
+arguFun(10, 20, 30, 40, 50);
 
 //! 6. Callback Function:
 //* the function which is passed to the another function as an arguement is called as callback function
 //* Callback function will be executed just after the completion of main function
 
 //! Main function:
-function mainFun(demo){
+function mainFun(demo) {
     console.log("Main Function is running...");
     console.log(demo);
     demo();
@@ -49,7 +49,7 @@ function mainFun(demo){
 mainFun(callBackfun);
 
 //! callback function:
-function callBackfun(){
+function callBackfun() {
     console.log("Callback function");
 }
 //! Realtime example:
@@ -61,16 +61,16 @@ function orderFood(waiter) {
 }
 orderFood(serveFood);
 // orderFood(parcelFood);
-function serveFood(){
+function serveFood() {
     console.log("Waiter :  food is ready Sir! Enjoy your meal");
 }
 function parcelFood() {
     console.log("Pack the food!");
 }
-document.getElementById("btn1").addEventListener("click",()=>{
+document.getElementById("btn1").addEventListener("click", () => {
     orderFood(serveFood);
 });
-document.getElementById("btn2",()=>{
+document.getElementById("btn2", () => {
     orderFood(parcelFood);
 })
 
@@ -81,7 +81,7 @@ function assignment(student) {
     student();
 }
 assignment(student);
-function student(){
+function student() {
     console.log("Assignment completed...");
-    
+
 }
