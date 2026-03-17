@@ -83,10 +83,13 @@ console.log(str9.includes("Javascript")); // false
 //? 20. startsWith()
 //? 21. endsWith()
 //? 22. search()
+//* It will return the index where the searched string is started.
+console.log("String search : ",str9.search("is")); // 5
+
 //? 23. split()
 let str10 = "HTML CSS JS";
-console.log(str10.split(" ")); // array
-console.log(str10.split(""));
+console.log(str10.split(" ")); // array ['HTML', 'CSS', 'JS']
+console.log(str10.split("")); 
 
 let str11 = "rohit@gmail.com";
 console.log(str11.split("@")); // (2) ['rohit','gmail.com']
