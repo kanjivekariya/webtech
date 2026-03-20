@@ -149,4 +149,3 @@ function getTotalPrice(products) {
     return totalPrice;
 }
 console.log(getTotalPrice(products));
-
